@@ -49,6 +49,7 @@ void printUserWord(int option , fstream& file, string searchstring) {
 			else {}
 		}
 	}
+
 	else if (option == 2) {
 		int count = 0, found = 0;
 		while (!file.eof()) {
@@ -60,6 +61,7 @@ void printUserWord(int option , fstream& file, string searchstring) {
 			else {}
 		}
 	}
+
 	else if (option == 3) {
 		int count = 0, found = 0;
 		while (!file.eof()) {
@@ -72,6 +74,7 @@ void printUserWord(int option , fstream& file, string searchstring) {
 		}
 		cout << "\nOccurrences of lines containing \"following\" : " << found << endl;
 	}
+
 	else if (option == 4) {
 		int count = 0, found = 0;
 		while (!file.eof()) {
@@ -85,6 +88,7 @@ void printUserWord(int option , fstream& file, string searchstring) {
 		}
 		cout << "\nOccurrences of lines containing \"following\" : " << found << endl;
 	}
+
 	else if (option == 5) {				
 		int count = 0, found = 0;
 		string userWord = searchstring;
@@ -105,6 +109,7 @@ void printUserWord(int option , fstream& file, string searchstring) {
 		}
 		cout << "\nOccurrences of lines NOT containing \"" << userWord <<"\" : " << found << endl;
 	}
+
 	else if (option == 6) {
 		int count = 0;
 		while (!file.eof()) {
@@ -116,6 +121,7 @@ void printUserWord(int option , fstream& file, string searchstring) {
 			}
 		}
 	}
+
 	else if (option == 7) {
 			while (!file.eof()) {
 				getline(file, line);

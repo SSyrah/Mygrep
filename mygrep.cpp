@@ -30,6 +30,7 @@ int main(int argc, char *argv[]) {
 			cout << SearchString << " NOT found in \"" << BigString << "\"";
 		}
 	} 
+
 	// if there is 3 command line arguments it goes here
 		
 	else if (count == 3) {
