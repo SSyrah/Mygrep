@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
 	int count = 0;
 	//test print how many arguments there is and what kind of
 	for (int i = 0; i < argc; i++) {
-		cout << "argc[" << i << "] is: " << argv[i] << endl;
+		// cout << "argc[" << i << "] is: " << argv[i] << endl;
 		count++;
 	}
 	// cout << "\ntesting count-number: " << count << endl;		// just for testing
@@ -50,11 +50,8 @@ int main(int argc, char *argv[]) {
 		 // testing can file be opened
 		if (isFileOpen(inputFile, argv[3])) {
 			cout << "File opened successfully!" << endl;			
-		}
-		else
-			cout << "An exception occurred. Exception Nr. -1. Could not find out the size of file \"man_grep_plain_ASCII.txt\"" << endl;
 		
-		
+		// testing what command line argument user is adding 
 		if (test[0] == '-' && test[1] == 'o' &&  test[2] == 'l' && test[3] == '\0') {
 			option1 = true, option2 = true, option3 = true;
 		}
@@ -80,7 +77,7 @@ int main(int argc, char *argv[]) {
 		if (option1 == true && option2 == true && option3 == true && option4 == false)
 			printUserWord(2, inputFile, argv[2]);
 			// exexutes using condition - oo, prints only number of founded rows with substring
-		else if (option1 == true && option2 == true && option5 == false)
+		else if (option1 == true && option2 == true && option3 == false && option5 == false)
 			printUserWord(3, inputFile, argv[2]);
 			// exexutes using condition - olo, prints number of rows where to find substring along with substring
 		else if (option1 == true && option2 == true && option3 == true && option4 == true && option5 == false && option6 == false)
@@ -96,8 +93,11 @@ int main(int argc, char *argv[]) {
 			printUserWord(7, inputFile, argv[2]);
 		else{
 			cout << "Couldn't regognize type of option, try again." << endl;
+			}
 		}
-	
+	else {
+			cout << "An exception occurred. Exception Nr. -1. Could not find out the size of file \"" << argv[3] << "\". The correct filename is: \"man_grep_plain_ASCII.txt\"" << endl;
+		}
 	}
-	return 0;
+return 0;
 } 
