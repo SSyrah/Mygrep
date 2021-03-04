@@ -32,6 +32,7 @@ int main(int argc, char *argv[]) {
 		}
 	} 
 
+
 	// if there is 3 command line arguments it goes here
 		
 	else if (count == 3) {

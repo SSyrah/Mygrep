@@ -15,6 +15,7 @@ char* FindString(const char* x, const char* y, int* place) {
 		tempstring[count] = tolower(tempstring[count]);
 		count++;
 	}
+
 	// lower all substring's characters
 	count = 0;
 	while (*(tempstring2+count) != '\0') {
