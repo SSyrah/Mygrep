@@ -11,6 +11,7 @@ int main(int argc, char *argv[]) {
 		// cout << "argc[" << i << "] is: " << argv[i] << endl;
 		count++;
 	}
+
 	// cout << "\ntesting count-number: " << count << endl;		// just for testing
 	// if there is just one or two command line arguments, it goes here
 	if (count <=2) {

@@ -7,6 +7,7 @@ using namespace std;
 
 // this function is for finding substring without any added command line parameters
 char* FindString(const char*, const char*, int* );
+
 // tests can file opened
 bool isFileOpen(fstream&, string);
 
